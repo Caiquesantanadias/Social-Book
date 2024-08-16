@@ -1,6 +1,8 @@
 package com.caique.social_book.user;
 
 
+import com.caique.social_book.book.Book;
+import com.caique.social_book.history.BookTransactionHistory;
 import com.caique.social_book.role.Role;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -22,7 +24,6 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.awt.print.Book;
 import java.security.Principal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -58,8 +59,8 @@ public class User implements UserDetails, Principal {
     private List<Role> roles;
     @OneToMany(mappedBy = "owner")
     private List<Book> books;
-//    @OneToMany(mappedBy = "user")
-//    private List<BookTransactionHistory> histories;
+    @OneToMany(mappedBy = "user")
+    private List<BookTransactionHistory> histories;
 
     @CreatedDate
     @Column(nullable = false, updatable = false)
