@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.caique</groupId>
 	<artifactId>social-book</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>social-book</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
