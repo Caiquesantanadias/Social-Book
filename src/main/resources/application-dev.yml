@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/book_social_network
+    url: jdbc:postgresql://localhost:5432/social-book-db
     username: username
     password: password
     driver-class-name: org.postgresql.Driver
@@ -16,8 +16,8 @@ spring:
   mail:
     host: localhost
     port: 1025
-    username: ali
-    password: ali
+    username: caique
+    password: caique
     properties:
       mail:
         smtp:
@@ -28,6 +28,9 @@ spring:
         connectiontimeout: 5000
         timeout: 3000
         writetimeout: 5000
+
+
+
 application:
   security:
     jwt:
@@ -35,6 +38,8 @@ application:
       expiration: 86400000
       refresh-token:
         expiration: 604800000
+
+
   mailing:
     frontend:
       activation-url: http://localhost:4200/activate-account

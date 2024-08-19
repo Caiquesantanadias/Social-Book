@@ -42,9 +42,9 @@ public class SecurityConfig {
                                         "/webjars/**",
                                         "/swagger-ui.html"
                                 )
-                                .permitAll()
+                                    .permitAll()
                                 .anyRequest()
-                                .authenticated()
+                                    .authenticated()
                 )
                 .sessionManagement(session -> session.sessionCreationPolicy(STATELESS))
                 .authenticationProvider(authenticationProvider)

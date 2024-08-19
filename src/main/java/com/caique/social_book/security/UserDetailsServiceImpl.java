@@ -1,5 +1,6 @@
 package com.caique.social_book.security;
 
+
 import com.caique.social_book.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
